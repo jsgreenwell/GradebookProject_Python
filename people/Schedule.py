@@ -4,3 +4,5 @@ class Schedule:
     def __init__(self):
         self.event = ""
         # What should go here?
+
+

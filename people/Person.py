@@ -11,6 +11,9 @@ class Person:
     __email = ""
     __phone = ""
     __address = ""
+    __zip = ""
+    __state = ""
+    __city = ""
 
     def __init__(self, fname: str, lname: str, dob:str, preferred_name: str=""):
         """
@@ -96,3 +99,26 @@ class Person:
     @address.setter
     def address(self, new_address: str):
         self.__address = new_address
+
+    @property
+    def zip(self) -> str:
+        return self.__zip
+
+    @zip.setter
+    def zip(self, new_zip: str):
+        self.__zip = new_zip
+
+    @property
+    def state(self) -> str:
+        return self.__state
+
+    @state.setter
+    def state(self, new_state: str):
+
+    @property
+    def city(self) -> str:
+        return self.__city
+
+    @city.setter
+    def city(self, new_city: str):
+        self.__city = new_city
